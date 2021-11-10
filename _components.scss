@@ -9,27 +9,27 @@
     border-radius: 50%;
 }
 .main-name{
-    font-family: $font-n;
+    font-family: $font-sahel;
     font-size: 50px;
     color: $color-second;
     @include textStyles;
 }
 .sub-name{
-    font-family: $font-jf;
+    font-family: $font-sahel;
     font-size: 18px;
     color: $color-second;
     text-align: center;
 
 }
 .main-heading{
-    font-family: $font-ds;
+    font-family: $font-nas ;
     font-size: 100px;
     font-weight: 300;
     color:$color-prime;
     margin-bottom: 40px ;
 }
 .sub-heading{
-    font-family: $font-jf;
+    font-family: $font-sahel;
     font-size: 60px;
     font-weight: 300;
     color:$color-second;
@@ -39,7 +39,7 @@
 .main-btn{
     width: 170px;
     height: 45px;
-    font-family: $font-jf;
+    font-family: $font-sahel;
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -53,3 +53,4 @@
         color: $color-dark;
     }
 }
+

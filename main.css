@@ -1,3 +1,14 @@
+@font-face {
+  font-family: sahel;
+  src: url(Sahel-Black.ttf);
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: nas;
+  src: url(IranNastaliq.ttf);
+}
+
 * {
   padding: 0%;
   margin: 0%;
@@ -27,7 +38,7 @@ body {
 }
 
 .main-name {
-  font-family: "Nunito", sans-serif;
+  font-family: sahel, tahoma;
   font-size: 50px;
   color: #bbb;
   font-weight: 300;
@@ -36,14 +47,14 @@ body {
 }
 
 .sub-name {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: sahel, tahoma;
   font-size: 18px;
   color: #bbb;
   text-align: center;
 }
 
 .main-heading {
-  font-family: "Dancing Script", cursive;
+  font-family: nas, tahoma;
   font-size: 100px;
   font-weight: 300;
   color: #d3ab55;
@@ -51,7 +62,7 @@ body {
 }
 
 .sub-heading {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: sahel, tahoma;
   font-size: 60px;
   font-weight: 300;
   color: #bbb;
@@ -61,7 +72,7 @@ body {
 .main-btn {
   width: 170px;
   height: 45px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: sahel, tahoma;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -112,5 +123,66 @@ body {
           transform: translate(-50%, -50%);
   color: wheat;
   text-align: center;
+}
+
+.about-us {
+  height: 90vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-us-left {
+  width: 40%;
+}
+
+.about-us img {
+  width: 100%;
+  opacity: 0.6;
+}
+
+.about-us-right {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 50px;
+}
+
+.about-us .stars {
+  margin: 30px 0;
+}
+
+.about-us .stars .star {
+  font-size: 15px;
+  margin-left: 10px;
+  color: #d3ab55;
+}
+
+.about-us .descript {
+  font-family: sahel, tahoma;
+  color: #bbb;
+  text-align: justify;
+  direction: rtl;
+}
+
+.about-us .descript::first-letter {
+  font-size: 20px;
+  font-weight: 300;
+  margin-right: 20px;
+}
+
+.about-us .sub-heading {
+  font-size: 40px;
 }
 /*# sourceMappingURL=main.css.map */

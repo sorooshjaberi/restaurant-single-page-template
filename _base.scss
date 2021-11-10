@@ -5,6 +5,8 @@ $color-second:#bbb;
 $font-ds:'Dancing Script',cursive;
 $font-jf:'Josefin Sans',sans-serif;
 $font-n:'Nunito',sans-serif;
+$font-sahel:sahel,tahoma;
+$font-nas:nas,tahoma;
 @mixin flexCenter {
     display: flex;
     align-items: center;
@@ -20,6 +22,15 @@ $font-n:'Nunito',sans-serif;
     top: $topval;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+@font-face {
+    font-family: sahel;
+    src: url(Sahel-Black.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: nas;
+    src: url(IranNastaliq.ttf);
 }
 *{
     padding: 0%;
