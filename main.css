@@ -9,6 +9,11 @@
   src: url(IranNastaliq.ttf);
 }
 
+.card-overlay, .card-img {
+  width: 100%;
+  height: 100%;
+}
+
 * {
   padding: 0%;
   margin: 0%;
@@ -87,6 +92,77 @@ body {
 .main-btn:hover {
   background-color: #d3ab55;
   color: #262323;
+}
+
+.card {
+  width: 33.3%;
+  height: 30vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover .card-overlay {
+  left: 0;
+}
+
+.card-overlay {
+  -webkit-transition: left 0.4s ease-out;
+  transition: left 0.4s ease-out;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  color: #fff;
+  background-color: rgba(211, 171, 85, 0.4);
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-overlay-heading {
+  font-family: nas, tahoma;
+  font-size: 90px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card-overlay-paragraph {
+  font-family: sahel, tahoma;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card-overlay-btn {
+  width: 150px;
+  height: 40px;
+  color: #d3ab55;
+  background-color: #fff;
+  font-family: sahel, tahoma;
+  font-size: 14px;
+  border: 1px solid #d3ab55;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+}
+
+.card-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.5;
 }
 
 .header {
@@ -184,5 +260,17 @@ body {
 
 .about-us .sub-heading {
   font-size: 40px;
+}
+
+.gallery .cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=main.css.map */
