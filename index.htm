@@ -25,8 +25,57 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+    <!-- start navbar -->
+    <nav class="navbar">
+      <!-- ham button start -->
+      <input type="checkbox" id="check" class="checkbox" hidden/>
+      <div class="hamburger-menu">
+        <label for="check" class="menu">
+          <div class="menu-line-1 menu-line"></div>
+          <div class="menu-line-2 menu-line"></div>
+          <div class="menu-line-3 menu-line"></div
+        ></label>
+      </div>
+      <!-- ham button end -->
+      <div class="navbar-navigation">
+        <div class="navbar-navigation-left">
+          <img
+            src="images/nav-img-1.jpeg"
+            class="left-img left-img-1"
+            alt="pic"
+          />
+          <img
+            src="images/nav-img-2.jpeg"
+            class="left-img left-img-2"
+            alt="pic"
+          />
+          <img
+            src="images/nav-img-3.jpeg"
+            class="left-img left-img-3"
+            alt="pic"
+          />
+        </div>
+        <div class="navbar-navigation-right">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="#home" class="nav-list-link">خانه</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#about-us" class="nav-list-link">درباره ما</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#gallery" class="nav-list-link">گالری تصاویر</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#contact" class="nav-list-link">ارتباط با ما</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
     <!-- start header -->
-    <header class="header">
+    <header class="header" id="home">
       <div class="brand">
         <a href="#" class="logo">
           <i class="fas fa-utensils"></i>
@@ -44,7 +93,7 @@
     </header>
     <!-- finnish header -->
     <!-- start about us -->
-    <section class="about-us">
+    <section class="about-us" id="about-us">
       <div class="about-us-left">
         <img src="images/about-us-img.png" alt="about-us" />
       </div>
@@ -79,7 +128,7 @@
     </section>
     <!-- end about us -->
     <!-- start gallery -->
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="cards-wrapper">
         <div class="card">
           <div class="card-overlay">
@@ -87,7 +136,11 @@
             <p class="card-overlay-paragraph">قیمت : 100 تومان</p>
             <button class="card-overlay-btn" type="button">سفارش</button>
           </div>
-          <img src="images/gallery-img-1.jpeg"  class="card-img" alt="card-img">
+          <img
+            src="images/gallery-img-1.jpeg"
+            class="card-img"
+            alt="card-img"
+          />
         </div>
         <div class="card">
           <div class="card-overlay">
@@ -95,7 +148,11 @@
             <p class="card-overlay-paragraph">قیمت : 100 تومان</p>
             <button class="card-overlay-btn" type="button">سفارش</button>
           </div>
-          <img src="images/gallery-img-2.jpeg" class="card-img"  alt="card-img">
+          <img
+            src="images/gallery-img-2.jpeg"
+            class="card-img"
+            alt="card-img"
+          />
         </div>
         <div class="card">
           <div class="card-overlay">
@@ -103,7 +160,11 @@
             <p class="card-overlay-paragraph">قیمت : 100 تومان</p>
             <button class="card-overlay-btn" type="button">سفارش</button>
           </div>
-          <img src="images/gallery-img-3.jpeg" class="card-img"  alt="card-img">
+          <img
+            src="images/gallery-img-3.jpeg"
+            class="card-img"
+            alt="card-img"
+          />
         </div>
         <div class="card">
           <div class="card-overlay">
@@ -111,7 +172,11 @@
             <p class="card-overlay-paragraph">قیمت : 100 تومان</p>
             <button class="card-overlay-btn" type="button">سفارش</button>
           </div>
-          <img src="images/gallery-img-4.jpeg" class="card-img"  alt="card-img">
+          <img
+            src="images/gallery-img-4.jpeg"
+            class="card-img"
+            alt="card-img"
+          />
         </div>
         <div class="card">
           <div class="card-overlay">
@@ -119,7 +184,11 @@
             <p class="card-overlay-paragraph">قیمت : 100 تومان</p>
             <button class="card-overlay-btn" type="button">سفارش</button>
           </div>
-          <img src="images/gallery-img-5.jpeg"  class="card-img"  alt="card-img">
+          <img
+            src="images/gallery-img-5.jpeg"
+            class="card-img"
+            alt="card-img"
+          />
         </div>
         <div class="card">
           <div class="card-overlay">
@@ -127,10 +196,71 @@
             <p class="card-overlay-paragraph">قیمت : 100 تومان</p>
             <button class="card-overlay-btn" type="button">سفارش</button>
           </div>
-          <img src="images/gallery-img-6.jpeg" class="card-img" alt="card-img">
+          <img
+            src="images/gallery-img-6.jpeg"
+            class="card-img"
+            alt="card-img"
+          />
         </div>
       </div>
     </section>
     <!-- end gallery -->
+    <!-- start footer -->
+    <footer class="footer" id="contact">
+      <div class="footer-header">
+        <a href="#" class="logo">
+          <i class="fas fa-utensils"></i>
+        </a>
+        <div>
+          <h1 class="main-name">رستوران من</h1>
+          <p class="sub-name">کیفیت اتفاقی نیست</p>
+        </div>
+      </div>
+      <div class="footer-social-media">
+        <ul class="social-media">
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-facebook" style="color: blue"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-whatsapp" style="color: green"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-telegram" style="color: blue"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-google-plus" style="color: red"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-instagram" style="color: purple"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-twitter" style="color: blue"></i>
+            </a>
+          </li>
+          <li class="social-media-item">
+            <a href="#" class="social-media-link">
+              <i class="fab fa-youtube" style="color: red"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-copyright">
+        <p class="footer-copyright-paragraph">
+          &copy;تمامی حقوق این وبسایت متعلق به شرکت سیلیکومی است
+        </p>
+      </div>
+    </footer>
+    <!-- end footer -->
   </body>
 </html>
